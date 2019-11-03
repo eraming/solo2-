@@ -1,6 +1,6 @@
 
 body {
-  background-image: url("./media/buds.jpg");
+  background-image: url("../img/buds.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -8,11 +8,11 @@ body {
 
 #collapsibleNavbar {
   justify-content: center;
-  color: white;
+  color: rgb(250, 248, 252);
 }
 
 .jumbotron {
-  background-image: url("./media/buds.jpg");
+  background-image: url("../img/buds.jpg");
   font-family: 'Sumana', serif;
 
 }
@@ -23,7 +23,7 @@ h1 {
 
 .container {
   padding: 20px 50px 20px 50px;
-  background-color: rgba(245, 245, 220, 0.7);
+  background-color: rgba(250, 248, 252, 0.55);
   min-width: 100vw;
 }
 
