@@ -1,2 +1,4 @@
-# solo2-
-HW 2 
+# solo2
+
+1. run build.py OR run build.sh to combine website files
+
