@@ -11,6 +11,8 @@ body {
   color: rgb(250, 248, 252);
 }
 
+
+
 .jumbotron {
   background-image: url("../img/buds.jpg");
   font-family: 'Sumana', serif;
@@ -25,6 +27,7 @@ h1 {
   padding: 20px 50px 20px 50px;
   background-color: rgba(250, 248, 252, 0.55);
   min-width: 100vw;
+  min-height: 80vw;
 }
 
 
