@@ -1,4 +1,4 @@
-# solo2 homework instructions: 
+instructions for running: 
 
-1. run build.py OR run build.sh to combine website files
+run manage.py 
 
