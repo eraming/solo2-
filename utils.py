@@ -16,9 +16,11 @@ def compile_pages():
         pages.append({
             'filename': ('./content/' + file_name),
             'output': ('./docs/' + file_name),
-            'title': '{{ title }}',
+            'basename': file_name,
+            'title': name_no_extension,
             'header': '{{ header }}',
         })
+
 
 def open_base():
     base_template = open("./templates/base.html").read()
