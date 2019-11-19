@@ -18,7 +18,7 @@ def compile_pages():
             'output': ('./docs/' + file_name),
             'basename': file_name,
             'title': name_no_extension,
-            'header': '{{ header }}',
+            'header': name_no_extension,
         })
 
 

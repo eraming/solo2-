@@ -3,9 +3,9 @@
 <head>
 
   {% for page in pages %}
-
+      {% if page.title == title %}
   <title> {{ page.title }} </title>
-
+{% endif %}
   {% endfor %}
 
 
@@ -25,9 +25,10 @@
   <div class="jumbotron text-center" style="margin-bottom:0">
 
 {% for page in pages %}
+    {% if page.title == title %}
 
     <h1> {{ page.title }} </h1>
-
+{% endif %}
 {% endfor %}
 
   </div>
