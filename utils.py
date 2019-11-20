@@ -21,6 +21,15 @@ def compile_pages():
             'header': name_no_extension,
         })
 
+def page_generator():
+	new_file_name = input("Enter a name and ext for this file: ")
+	new_file = open('content/' + new_file_name, 'w+')
+	new_file.write('''
+		<div>
+			<h2>New Header<h2>
+			<p>New content</p>
+		</div>
+		''')
 
 def open_base():
     base_template = open("./templates/base.html").read()
@@ -40,6 +49,7 @@ def write(page, base_with_content):
     return final_page
 
 
+
 def main():
     compile_pages()
 
@@ -48,31 +58,3 @@ def main():
         content = open_content(page)
         base_with_content = compile(page, base_template, content)
         write(page, base_with_content)
-
-
-
-
-
-# print('------------- Example 3')
-
-# template = Template('''
-# Using if and for loops combined:
-#
-# {% for link in links %}
-#     {% if link == selected_link %} >> {% endif %} {{ link }}
-# {% endfor %}
-# ''')
-#
-# list_of_links = [
-#     'google.com',
-#     'microsoft.com',
-#     'facebook.com',
-# ]
-#
-# selected = 'microsoft.com'
-#
-# results = template.render({
-#     'links': list_of_links,
-#     'selected_link': selected,
-# })
-# print(results)
