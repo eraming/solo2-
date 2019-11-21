@@ -48,8 +48,6 @@ def write(page, base_with_content):
     final_page = open(page['output'], "w+").write(base_with_content)
     return final_page
 
-
-
 def main():
     compile_pages()
 
